@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Sailor Moon Store.Co</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page.-->
+  <script>var __adobewebfontsappname__ = "dreamweaver"</script>
+  <script src="http://use.edgefonts.net/montserrat:n4:default;source-sans-pro:n2:default.js"></script>
+  <link rel="icon" type="image/x-icon" href="img/favicon.svg">
+</head>
+
+<body class="">
+  <div id="mainWrapper">
+    <header>
+      <!-- This is the header content. It contains Logo and links -->
+      <div id="logo"><a href="index.html"> <img src="img/logo.svg" alt="sailormoon store logo"></a>
+        <!-- Company Logo text -->
+      </div>
+      <div id="headerLinks">
+        <a onclick="document.getElementById('id01').style.display='block'">Login</a>
+        <svg id="icon-cart" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+          viewBox="0 0 24 24">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312" />
+        </svg>
+        <span id="cart-count">0</span>
+      </div>
+
+
+    </header>
+    <div id="offer">
+      <!-- The offer section displays a banner text for promotions -->
+      <img src="img/Banner-01.jpg" alt="banner" style="max-width: 100%;">
+
+    </div>
+    <div id="content">
+      <div class="sidebar">
+        <!-- This adds a sidebar with 1 searchbox,2 menusets, each with 4 links -->
+        <input type="text" id="search" value="Search">
+        <div id="menubar">
+          <nav class="menu">
+            <h2><!-- Title for menuset 1 -->NEW PRODUCTS </h2>
+            <hr>
+            <ul>
+              <!-- List of links under menuset 1-->
+              <li><a href="#" title="Beauty Set">Beauty Set</a></li>
+              <li><a href="#" title="Fragrance">Fragrance</a></li>
+              <li><a href="#" title="Serum">Serum</a></li>
+            </ul>
+          </nav>
+          <nav class="menu">
+            <h2>BEST SELLERS </h2>
+            <!-- Title for menuset 2 -->
+            <hr>
+            <ul>
+              <!--List of links under menuset 2 -->
+              <li><a href="#" title="Collagen">Collagen</a></li>
+              <li><a href="#" title="Body Cream">Body Cream</a></li>
+              <li><a href="#" title="Face Mask">Face Mask</a></li>
+            </ul>
+          </nav>
+        </div>
+
+
+      </div>
+      <section class="mainContent">
+        <!--paymentform -->
+        <div class="container">
+          <h1>Payment Page</h1>
+          <form id="paymentForm">
+            <div class="form-group">
+              <label for="cardNumber">Card Number:</label>
+              <input type="text" id="cardNumber" name="cardNumber" placeholder="Enter card number" required>
+            </div>
+            <div class="form-group">
+              <label for="expiryDate">Expiry Date:</label>
+              <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YYYY" required>
+            </div>
+            <div class="form-group">
+              <label for="cvv">CVV:</label>
+              <input type="text" id="cvv" name="cvv" placeholder="Enter CVV" required>
+            </div>
+            <div class="form-group">
+              <label for="name">Name on Card:</label>
+              <input type="text" id="name" name="name" placeholder="Enter name" required>
+            </div>
+            <button type="submit">Submit Payment</button>
+          </form>
+        </div>
+      </section>
+
+      <!--TOK LOGIN SECTION -->
+      <div id="id01" class="modal">
+        <form class="modal-content animate" action="/action_page.php" method="post">
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close"
+              title="Close Modal">&times;</span>
+          </div>
+
+          <div class="container">
+            <label><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="username" required>
+
+            <label><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="password" required>
+
+            <button type="submit">Login</button>
+            <label>
+              <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+          </div>
+
+          <div class="container" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'"
+              class="cancelbtn">Cancel</button>
+            <span class="psw">Forgot <a href="#">password?</a></span>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!--PENUTUP LOGIN SECTION -->
+
+    <footer>
+      <!-- This is the footer with default 3 divs -->
+      <div>
+        <h2>SailorMoon Store.Co</h2>
+        <p>Registration No: 20240416 (423330-U)<br>
+          Unit 17-10, Level 8, Menara Kenyalang
+          94300 Kota Samarahan, Sarawak</p>
+      </div>
+      <div>
+        <p>Online Customer Service Operation Hours:
+          <br>Monday to Friday, 8:30AM - 5:30PM.
+        </p>
+      </div>
+      <div class="footerlinks">
+        <p><a href="faq.html" title="FAQs">FAQs</a></p>
+        <p><a href="privacy.html" title="Privacy Notice">Privacy Notice</a></p>
+        <p><a href="terms.html" title="Terms & Conditions">Terms & Conditions</a></p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </div>
+</body>
+
+</html>
