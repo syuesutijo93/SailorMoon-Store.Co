@@ -1,0 +1,46 @@
+<products>
+  <product>
+    <name>Body Cream</name>
+    <id>1</id>
+    <description>Body cream is a nourishing skincare product designed to hydrate and moisturize the skin. Typically thicker in consistency compared to lotions, body creams are formulated with a blend of oils, butters, and water to provide intense hydration and lock in moisture. They often contain ingredients like shea butter, cocoa butter, and various vitamins to soothe and soften the skin, leaving it feeling smooth.</description>
+    <price>49.99</price>
+    <image>img/product 1.jpg</image>
+  </product>
+  <product>
+    <name>Serum</name>
+    <id>2</id>
+    <description>Serum is a skincare product formulated to address specific concerns such as hydration, anti-aging, or brightening. Unlike moisturizers, serums are lightweight, water-based formulations that contain high concentrations of active ingredients like vitamins, antioxidants, and peptides. They are designed to penetrate deeper into the skin to deliver potent ingredients more effectively, targeting issues like fine lines, wrinkles, dark spots, and uneven texture. Serums are typically applied after cleansing and toning, but before moisturizing, making them an essential step in many skincare routines.</description>
+    <price>169.99</price>
+    <image>img/product 2.jpg</image>
+  </product>
+  <product>
+    <name>Beauty Set</name>
+    <id>3</id>
+    <description>A beauty set typically comprises a curated selection of skincare, makeup, or grooming products designed to enhance one's appearance and promote self-care. These sets often include a combination of items such as moisturizers, serums, masks, lipsticks, eyeliners, and brushes, tailored to specific needs or occasions. They offer convenience and variety, making them popular as gifts or for personal use.</description>
+    <price>159.99</price>
+    <image>img/product 3.jpg</image>
+  </product>
+  <product>
+    <name>Fragrance</name>
+    <id>4</id>
+    <description>Fragrance is a complex blend of aromatic compounds that evoke a particular scent or aroma. It can be found in various forms, such as perfumes, colognes, essential oils, and scented candles. Fragrances can be derived from natural sources like flowers, fruits, spices, and woods, or they can be synthetically produced in laboratories. They play a significant role in enhancing personal grooming, creating ambiance, and even influencing mood and emotions. Fragrance is deeply intertwined with human culture and has been used for millennia for rituals, ceremonies, and personal adornment.</description>
+    <price>239.99</price>
+    <image>img/product 4.jpg</image>
+  </product>
+  <product>
+    <name>Face Mask</name>
+    <id>5</id>
+    <description>A brightening face mask is a skincare product designed to revitalize and illuminate the complexion. Typically formulated with ingredients like vitamin C, niacinamide, or fruit extracts, it aims to diminish dullness, uneven skin tone, and dark spots while promoting a radiant glow. These masks often offer a quick and convenient way to enhance the skin's appearance, leaving it looking refreshed and rejuvenated after use.</description>
+    <price>29.99</price>
+    <image>img/product 5.jpg</image>
+  </product>
+  <product>
+    <name>Collagen</name>
+    <id>6</id>
+    <description>Collagen is a vital protein found abundantly throughout the body, serving as a structural component in various tissues such as skin, bones, muscles, tendons, and ligaments. It provides strength, elasticity, and support to these tissues, contributing to their overall integrity and function. As we age, collagen production naturally decreases, leading to wrinkles, joint stiffness, and other signs of aging. Consequently, collagen supplements have gained popularity for their potential to support skin health, joint mobility, and overall well-being.</description>
+    <price>129.99</price>
+    <image>img/product 6.jpg</image>
+  </product>
+
+  <!-- Add more product entries as needed -->
+</products>

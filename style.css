@@ -1,0 +1,899 @@
+@charset "utf-8";
+
+/* Global Styles */
+a:hover {
+  color: rgba(255, 255, 255, 1.00);
+}
+
+/* Whole page content */
+#mainWrapper {
+  width: 80%;
+  max-width: 90vw;
+  margin: auto;
+  text-align: center;
+  padding-top: 10px;
+  transition: transform .5s;
+}
+
+/*header*/
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+  font-family: 'Montserrat', sans-serif;
+  color: rgba(146, 146, 146, 1.00);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+header .icon-cart {
+  position: relative;
+
+}
+
+/* Logo placeholder*/
+#logo {
+  float: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 139px;
+  /* Increase the width for a larger logo */
+  text-align: center;
+  background-color: transparent;
+
+
+
+
+}
+
+/* div for Links in header */
+#headerLinks {
+  float: left;
+  background-color: rgba(255, 255, 255, 1.00);
+}
+
+/* Links in header Login/Register & Cart*/
+#headerLinks a {
+  text-decoration: none;
+  color: #142763;
+  ;
+  padding-right: 45px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  width: 100%;
+
+}
+
+svg {
+  color: #050834;
+  width: 30px;
+  margin-bottom: -8px;
+}
+
+#cart-count {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  line-height: 21px;
+  color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 8%;
+
+}
+
+/* Offer text banner*/
+#offer {
+  text-align: center;
+}
+
+#offer img {
+  display: block;
+  margin: 0 auto;
+  justify-content: center;
+  object-fit: cover;
+}
+
+/* Main content of the site */
+#content {
+  clear: both;
+  overflow: auto;
+  padding-top: 29px;
+}
+
+/* Sidebar */
+#content .sidebar {
+  font-family: 'Montserrat', sans-serif;
+  color: #000;
+  float: left;
+  width: 20%;
+  padding-left: 3%;
+  padding-right: 3%;
+  text-align: center;
+  background-color: #d5d5d5;
+  padding-top: 36px;
+  height: 790px;
+  display: table-cell;
+
+}
+
+/* main content of the site */
+#content .mainContent {
+  float: left;
+  width: 70%;
+  text-align: center;
+  padding-left: 2%;
+}
+
+/*menubar's properties for menus in sidebar */
+#content .sidebar #menubar {
+  text-align: left;
+  color: #000;
+  position: relative;
+  left: 0%;
+}
+
+/* Search field in sidebar */
+#content .sidebar #search {
+  width: 100%;
+  border-radius: 0px;
+  height: 42px;
+  text-align: center;
+  color: rgba(208, 207, 207, 1.00);
+  font-size: 14px;
+  ;
+  margin-bottom: 21px;
+}
+
+/*menu elements */
+.menu ul li {
+  list-style-type: none;
+  font-size: x-large;
+  position: relative;
+  left: -35px;
+  padding-top: 12px;
+}
+
+/* Product rows for catalog */
+#content .mainContent .productRow {
+  overflow: auto;
+  color: #000;
+}
+
+/* Each product Information in the catalog */
+.mainContent .productRow .productInfo {
+  float: right;
+  padding-left: 3%;
+  padding-right: 0%;
+  width: 30%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.productInfo div img {
+  width: 100%;
+  /* Maintain image width as 100% of parent container */
+  height: 300px;
+  /* Set a fixed height for the image */
+  object-fit: cover;
+  /* Crop the image to cover the specified dimensions */
+}
+
+/* Prices of a products in catalog */
+.productRow .productInfo .price {
+  font-family: 'Montserrat', sans-serif;
+  color: #000;
+  font-size: 15px;
+  position: relative;
+  top: -10px;
+}
+
+
+
+/* Buy button for products in catalog */
+.productRow .productInfo .AddtoCartButton {
+  position: relative;
+  top: -30px;
+  width: 84%;
+  background-color: #142763;
+  height: 35px;
+  color: #ffffff;
+  border-style: none;
+  font-size: 13px;
+  margin-top: 8px;
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+/* footer */
+#mainWrapper footer {
+  clear: both;
+  overflow: auto;
+  background-color: #142763;
+  font-family: source-sans-pro, sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  line-height: 1.8;
+  padding-top: 22px;
+  padding-left: 22px;
+  text-align: center;
+  padding-bottom: 22px;
+  padding-right: 22px;
+}
+
+/*Each footer content Reg No & Online Cust Service*/
+#mainWrapper footer div {
+  width: 27%;
+  float: left;
+  padding-left: 4%;
+  padding-right: 2%;
+  color: #ffffff;
+  text-align: left;
+}
+
+/* Links in footer FAQs*/
+footer div a {
+  color: #ffffff;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* Product's images in catalog */
+.productInfo div img {
+  width: 100%;
+}
+
+/*Links in sidebar */
+.sidebar #menubar .menu ul li a {
+  color: rgba(146, 146, 146, 1.00);
+  text-decoration: none;
+}
+
+.sidebar #menubar .menu ul li a:hover {
+  color: rgba(107, 97, 97, 1.00);
+  text-decoration: none;
+}
+
+/* Menu headings in sidebar */
+#menubar .menu h2 {
+  font-size: 14px;
+}
+
+/*Links under menus in sidebar */
+#menubar .menu ul li a {
+  font-size: 14px;
+}
+
+/* Menus in sidebar */
+.sidebar #menubar .menu {
+  margin-bottom: 29px;
+}
+
+/* Container for links in footer */
+footer .footerlinks {
+  margin-top: -15px;
+}
+
+/* Media query for tablets */
+@media screen and (max-width:700px) {
+
+  /* search field in sidebar */
+  #content .sidebar #search {
+    display: none;
+  }
+
+  /* sidebar */
+  #content .sidebar {
+    float: none;
+    width: 100%;
+    height: auto;
+    overflow: auto;
+    padding-left: 12%;
+    padding-top: 0px;
+  }
+
+  /* horizontal separators in sidebar */
+  #content .sidebar hr {
+    display: none;
+  }
+
+  /*The sidebar and maincontent of page */
+  #content {
+    position: relative;
+    top: -22px;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  /*menu headings in sidebar */
+  #menubar .menu h2 {
+    display: inline;
+    font-size: medium;
+    padding-right: 6%;
+  }
+
+  /* Unordered List of links */
+  #menubar .menu ul {
+    display: inline;
+  }
+
+  /*list elements */
+  #menubar .menu ul li {
+    display: inline;
+    font-size: medium;
+    padding-left: 0%;
+    padding-right: 3%;
+  }
+
+  /*The link to be hidden in tablet view */
+  .sidebar #menubar .menu ul .notimp {
+    display: none;
+  }
+
+  /* menus in sidebar */
+  .sidebar #menubar .menu {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    top: 16px;
+  }
+
+  /*menubar in sidebar */
+  #content .sidebar #menubar {
+    position: relative;
+    left: -7%;
+    overflow: hidden;
+    width: 95%;
+    padding-top: 0px;
+  }
+
+  /* offer banners content */
+  #mainWrapper #offer p {
+    font-size: small;
+  }
+
+  /* main content region of page */
+  #mainWrapper #content .mainContent {
+    overflow: hidden;
+    width: 95%;
+    margin-top: 40px;
+  }
+
+  /* Prices of products in catalog view */
+  .productRow .productInfo .price {
+    font-size: 19px;
+  }
+
+  /* Content holders in catalog view */
+  .productRow .productInfo .productContent {
+    font-size: 16px;
+  }
+
+  /* Buy buttons in catalog view */
+  .productRow .productInfo .AddtoCartButton {
+    font-size: 15px;
+  }
+
+  /* Container for links in footer */
+  #mainWrapper footer .footerlinks {
+    float: none;
+    width: 100%;
+    position: relative;
+    top: 17px;
+    clear: both;
+    text-align: center;
+    left: 0%;
+    padding-bottom: 19px;
+  }
+
+  /* Container for each footer divisions */
+  #mainWrapper footer div {
+    width: 44%;
+    text-align: justify;
+    font-size: 15px;
+  }
+
+  /* Links in footer */
+  .footerlinks p a {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    display: inline;
+    padding-right: 35px;
+  }
+
+  /* Footer region */
+  #mainWrapper footer {
+    padding-left: 16px;
+    overflow: hidden;
+  }
+
+  /* Links in header */
+  header #headerLinks a {
+    padding-left: 0px;
+    padding-right: 30px;
+  }
+
+  /* Offer- Text banner */
+  #mainWrapper #offer {
+    padding-left: 22%;
+  }
+
+  /* Paragraphs in footer */
+  footer .footerlinks p {
+    display: inline;
+  }
+}
+
+/*media query for small screen devices */
+@media screen and (max-width:480px) {
+
+  /*Container for links in header */
+  #mainWrapper header #headerLinks {
+    width: 100%;
+    text-align: center;
+    background-color: rgba(190, 190, 190, 1.00);
+    padding-bottom: 21px;
+  }
+
+  /* Logo placeholder*/
+  #mainWrapper header #logo {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Links in header */
+  header #headerLinks a {
+    text-align: center;
+    padding-right: 15px;
+    padding-left: 0px;
+  }
+
+  /*Offer - Text Banner */
+  #mainWrapper #offer {
+    padding-left: 0px;
+    text-align: center;
+  }
+
+  /* Menubar in sidebar */
+  #content .sidebar #menubar {
+    position: relative;
+    left: -8%;
+    text-align: center;
+  }
+
+  /*Menu headings in sidebar */
+  #menubar .menu h2 {
+    width: 100%;
+    display: block;
+  }
+
+
+  /* Each product in catalog view */
+  .mainContent .productRow .productInfo {
+    width: 100%;
+    display: block;
+    padding-left: 0px;
+    padding-right: 0px;
+    position: relative;
+    left: -2%;
+  }
+
+  #mainWrapper footer div {
+    width: 100%;
+    margin-left: -16px;
+    text-align: justify;
+    padding-bottom: 16px;
+    overflow: auto;
+  }
+
+  /* Unordered list for menu elements */
+  .menu ul {
+    position: relative;
+    padding-left: 24%;
+  }
+
+  /* Container for links in footer */
+  #mainWrapper footer .footerlinks {
+    padding-left: 8%;
+  }
+
+  /* Main content which excludes the sidebar */
+  #mainwrapper #content .mainContent {
+    margin-top: -81px;
+    text-align: center;
+    width: 100%;
+    padding-left: 0px;
+  }
+}
+
+/* FAQ Content */
+#faqContent {
+  padding-top: 100px;
+  font-family: 'Montserrat', sans-serif;
+  color: #000;
+  text-align: justify;
+  top: -20px;
+  line-height: 1.6;
+  font-size: 13px;
+}
+
+.clickable {
+  cursor: pointer;
+  background-color: white;
+  padding: 10px;
+  font-size: 18px;
+}
+
+.clickable:hover {
+  color: white;
+  background-color: #3a63a8;
+
+}
+
+.clicked {
+  background-color: white;
+}
+
+.hidden {
+  display: none;
+
+}
+
+#content {
+  color: black;
+  background-color: white;
+
+}
+
+.clickable-1 {
+  cursor: pointer;
+  background-color: white;
+  padding: 10px;
+  font-size: 18px;
+}
+
+.clickable-1:hover {
+  color: white;
+  background-color: #3a63a8;
+
+}
+
+.clicked-1 {
+  background-color: white;
+}
+
+.hidden-1 {
+  display: none;
+
+}
+
+#content-1 {
+  color: black;
+  background-color: white;
+  padding: 10px;
+}
+
+.clickable-2 {
+  cursor: pointer;
+  background-color: white;
+  padding: 10px;
+  font-size: 18px;
+}
+
+.clickable-2:hover {
+  color: white;
+  background-color: #3a63a8;
+
+}
+
+.clicked-2 {
+  background-color: white;
+}
+
+.hidden-2 {
+  display: none;
+
+}
+
+#content-2 {
+  color: black;
+  background-color: white;
+  padding: 10px;
+}
+
+/* TNC Content */
+#tncContent {
+  padding-top: 100px;
+  font-family: 'Montserrat', sans-serif;
+  color: #000;
+  text-align: justify;
+  top: -20px;
+  line-height: 1.6;
+  font-size: 13px;
+}
+
+/* Privacy Content */
+#prContent {
+  padding-top: 100px;
+  font-family: 'Montserrat', sans-serif;
+  color: #000;
+  text-align: justify;
+  top: -20px;
+  line-height: 1.6;
+  font-size: 13px;
+}
+
+
+
+/*checkout*/
+
+.productInfo img {
+  width: 100%;
+  height: auto;
+}
+
+.cart {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 20px;
+  width: 300px;
+  float: right;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  color: #000;
+
+}
+
+.cartItems {
+  margin-bottom: 10px;
+  line-height: 1.6;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  color: #000;
+
+}
+
+.totalPrice {
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  color: #000;
+
+}
+
+.product {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.product button {
+  float: right;
+}
+
+.removeItemButton {
+  position: relative;
+  background-color: #142763;
+  height: 35px;
+  width: 30%;
+  color: #ffffff;
+  border-style: none;
+  font-size: 13px;
+  margin-top: 7px;
+  font-family: 'Montserrat', sans-serif;
+
+
+}
+
+
+
+/* paymentpage */
+
+/* Container styles */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Heading styles */
+h1 {
+  color: #333;
+  text-align: center;
+}
+
+/* Form styles */
+form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Form input styles */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Button styles */
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Error message styles */
+.error-message {
+  color: #ff0000;
+  margin-top: 5px;
+}
+
+
+
+/* Login/Sign Up */
+/* Full-width input fields */
+input[type=text],
+input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #142763;
+  color: white;
+  padding: 10px 10px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #142763;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto;
+  /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%;
+  /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {
+    -webkit-transform: scale(0)
+  }
+
+  to {
+    -webkit-transform: scale(1)
+  }
+}
+
+@keyframes animatezoom {
+  from {
+    transform: scale(0)
+  }
+
+  to {
+    transform: scale(1)
+  }
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+
+  .cancelbtn {
+    width: 100%;
+  }
+}
