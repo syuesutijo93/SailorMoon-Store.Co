@@ -75,6 +75,10 @@ function updateCartDisplay() {
   totalPriceElement.textContent = `RM ${totalPrice.toFixed(2)}`;
 }
 
+
+
+
+
 //checkout
 function checkout() {
   // Here you can implement the checkout logic, e.g., redirecting to a payment page.
@@ -84,96 +88,62 @@ function checkout() {
 }
 
 
-// Function to validate credit card number format
-function isValidCreditCard(cardNumber) {
-  // This is a simple validation, you might want to use a more robust library for real-world use
-  // Check if the cardNumber contains only digits and has a length of 16 (typical length of credit card numbers)
-  return /^\d{16}$/.test(cardNumber);
-}
-
-// Function to handle payment submission
-function submitPayment() {
-  // Get payment form data
-  var cardNumber = document.getElementById('cardNumber').value;
-  var expiryDate = document.getElementById('expiryDate').value;
-  var cvv = document.getElementById('cvv').value;
-  var nameOnCard = document.getElementById('name').value;
-
-  // Validate credit card number format
-  if (!isValidCreditCard(cardNumber)) {
-    alert('Please enter a valid credit card number.');
-    return; // Exit the function if credit card number is invalid
-  }
-
-  // Check if any of the required fields are empty
-  if (!cardNumber || !expiryDate || !cvv || !nameOnCard) {
-    alert('Please fill in all required fields.');
-    return; // Exit the function if any required field is empty
-  }
-
-  // Simulate payment processing (replace with actual payment processing logic)
-  // Here, you can send the payment data to a server for processing
-  // For demonstration purposes, we're just showing an alert
-  alert('Processing payment...');
-
-  // Simulate a successful payment
-  var isPaymentSuccessful = true; // Replace this with your actual payment processing result
-  if (isPaymentSuccessful) {
-    // Display a message indicating payment success
-    alert('Payment successful! Redirecting to confirmation page...');
-
-    // Redirect to the confirmation page after a short delay (for demonstration purposes)
-    setTimeout(function() {
-      window.location.href = 'confirmation.html';
-    }, 2000); // Redirect after 2 seconds
-  } else {
-    // Display a message indicating payment failure
-    alert('Payment failed! Please try again.');
-  }
-}
 
 
-
-// Payment Page
-
-// Function to handle payment submission
-
-function submitPayment() {
-  // Get payment form data
-  var cardNumber = document.getElementById('cardNumber').value;
-  var expiryDate = document.getElementById('expiryDate').value;
-  var cvv = document.getElementById('cvv').value;
-  var nameOnCard = document.getElementById('name').value;
-
-  // Simulate payment processing (replace with actual payment processing logic)
-  // Here, you can send the payment data to a server for processing
-  // For demonstration purposes, we're just showing an alert
-  alert('Processing payment...');
-
-  // Simulate a successful payment
-  var isPaymentSuccessful = true; // Replace this with your actual payment processing result
-  if (isPaymentSuccessful) {
-    // Display a message indicating payment success
-    alert('Payment successful! Redirecting to confirmation page...');
-
-    // Redirect to the confirmation page after a short delay (for demonstration purposes)
-    setTimeout(function() {
-      window.location.href = 'confirmation.html';
-    }, 2000); // Redirect after 2 seconds
-  } else {
-    // Display a message indicating payment failure
-    alert('Payment failed! Please try again.');
-  }
-}
-
-// Event listener for the payment form submission
 document.getElementById('paymentForm').addEventListener('submit', function(event) {
-  event.preventDefault(); // Prevent the default form submission
+  event.preventDefault();
 
-  // Call the submitPayment function when the form is submitted
-  submitPayment();
+  // Get form values
+  var cardNumber = document.getElementById('cardNumber').value.trim();
+  var expiryDate = document.getElementById('expiryDate').value.trim();
+  var cvv = document.getElementById('cvv').value.trim();
+
+  // Perform validation
+  if (isValidCardNumber(cardNumber) && isValidExpiryDate(expiryDate) && isValidCVV(cvv)) {
+    // Here you can implement the checkout logic, e.g., redirecting to a confirmation page.
+    alert('Redirecting to confirmation payment...');
+    // Redirect to confirmation page
+    window.location.href = 'confirmation.html';
+  } else {
+    if (!isValidCardNumber(cardNumber)) {
+      alert('Invalid card number. Please enter a valid 16-digit number.');
+    } else if (!isValidExpiryDate(expiryDate)) {
+      alert('Invalid expiry date. Please enter a valid date in MM/YYYY format.');
+    } else if (isExpired(expiryDate)) {
+      alert('Card has already expired. Please use a valid card.');
+    } else if (!isValidCVV(cvv)) {
+      alert('Invalid CVV code. Please enter a valid 3 or 4-digit number.');
+    }
+  }
 });
 
+// Function to validate card number
+function isValidCardNumber(cardNumber) {
+  // Implement your card number validation logic here
+  return /^\d{16}$/.test(cardNumber); // Example: Check if it's a 16-digit number
+}
+
+// Function to validate expiry date
+function isValidExpiryDate(expiryDate) {
+  // Implement your expiry date validation logic here
+  return /^\d{2}\/\d{4}$/.test(expiryDate); // Example: Check if it's in MM/YYYY format
+}
+
+// Function to check if expiry date is in the past
+function isExpired(expiryDate) {
+  var today = new Date();
+  var parts = expiryDate.split('/');
+  var expiryMonth = parseInt(parts[0], 10);
+  var expiryYear = parseInt(parts[1], 10);
+  var expiry = new Date(expiryYear, expiryMonth - 1); // Subtract 1 from month since JavaScript months are zero-based
+  return expiry < today;
+}
+
+// Function to validate CVV
+function isValidCVV(cvv) {
+  // Implement your CVV validation logic here
+  return /^\d{3,4}$/.test(cvv); // Example: Check if it's a 3 or 4-digit number
+}
 
 
 
@@ -245,3 +215,6 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+
+
